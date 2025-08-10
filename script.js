@@ -1,0 +1,1 @@
+console.log('Airdrop Hunter JS loaded');

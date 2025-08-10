@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "static/uploads"
+publish_mode: editorial_workflow
+collections:
+  - name: "airdrops"
+    label: "Airdrops"
+    folder: "content/airdrops"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Short Description", name: "short", widget: "string" }
+      - { label: "Chain", name: "chain", widget: "string" }
+      - { label: "Category", name: "category", widget: "select", options: ["gratis", "retro"] }
+      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Link", name: "link", widget: "string" }
+      - { label: "Guide", name: "guide", widget: "text" }
